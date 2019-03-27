@@ -252,17 +252,13 @@ class Graph
                 cout<<"No Path";
                 exit(0);
             }
-            cout<<endl;
-            cout<<endl;
+           
             cout<<"\t\t\tThe shortest distance between "<<src<<" and "<<des<< " is : "<<distance[des]<<" KM"<<endl;
-            cout<<endl;
-            cout<<endl;
-            cout<<"\t\t\tThe cost of Travel Inclusive of Taxes : Rs "<<distance[des]*rate<<endl;
-            cout<<endl;
-            cout<<endl;
+           
+            cout<<"\t\t\tThe cost of Travel : Rs "<<distance[des]*rate<<endl;
+            
             cout<<"\t\t\tThe path Of the Shortest Route is: "<<endl;
-            cout<<endl;
-            cout<<endl;
+            
             cout<<"\t\t\t";
             string k=des;
             cout<<k<<"<--";
