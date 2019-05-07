@@ -3,8 +3,8 @@
 
 NAme : 
 piyush
-Pick : Peshawer
-Drop:Nowshera
+Pick : NewDelhi
+Drop:Noida
 Distance: 40Km
 Charges: Rs196
 		Customer Record
@@ -12,24 +12,24 @@ Charges: Rs196
 NAme : 
 avi
 
-Pick : Peshawer
-Drop:Islamabad
+Pick : NewDelhi
+Drop:Gurugram
 Distance: 150Km
 Charges: Rs735
 		Customer Record
 
 NAme : 
 lalit
-Pick : Peshawer
-Drop:Lahore
+Pick : NewDelhi
+Drop:Indirapuram
 Distance: 350Km
 Charges: Rs2205
 		Customer Record
 
 NAme : 
 pushpak
-Pick : Peshawer
-Drop:Nowshera
+Pick : NewDelhi
+Drop:Noida
 Distance: 40Km
 Charges: Rs196
 		Customer Record
@@ -37,8 +37,8 @@ Charges: Rs196
 NAme : 
 jotaro
 
-Pick : Peshawer
-Drop:Mardan
+Pick : NewDelhi
+Drop:Ghaziabad
 Distance: 35Km
 Charges: Rs171.5
 		Customer Record
@@ -46,7 +46,15 @@ Charges: Rs171.5
 NAme : 
 dio
 
-Pick : Peshawer
-Drop:Mardan
+Pick : NewDelhi
+Drop:Ghaziabad
 Distance: 35Km
 Charges: Rs171.5
+		Customer Record
+
+NAme : 
+rohan
+Pick : NewDelhi
+Drop:Noida
+Distance: 40Km
+Charges: Rs196
