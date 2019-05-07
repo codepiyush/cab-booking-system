@@ -11,10 +11,10 @@ string NewWorkerName;
 string NewWorkerPassword;
 string AdminName = "admin";
 string AdminPassword = "admin";
-void BookingFromPeshawerToNowshera();   
-void BookingFromPeshawerToIslamabad();  
-void BookingFromPeshawerToMardan();     
-void BookingFromPeshawerToLahore();     
+void BookingFromNewDelhiToNoida();   
+void BookingFromNewDelhiToGurugram();  
+void BookingFromNewDelhiToGhaziabad();     
+void BookingFromNewDelhiToIndirapuram();     
 const int Size = 10;
 string NumberOfCab[Size] = {"", "215", "210", "456", "789", "123"};  
 int CABSTATUS[Size] = {1, 1, 1, 1, 1, 1};                            
@@ -370,13 +370,13 @@ int main()
                                 cout << "\t********************" << endl;
                                 cout << endl;
                                 cout << endl;
-                                cout << "<1> To Book Cab From Peshawer To Nowshera" << endl;
+                                cout << "<1> To Book Cab From NewDelhi To Noida" << endl;
                                 cout << endl;
-                                cout << "<2> To Book Cab From Peshawer To Islamabad" << endl;
+                                cout << "<2> To Book Cab From NewDelhi To Gurugram" << endl;
                                 cout << endl;
-                                cout << "<3> To Book Cab From Peshawer To Lahore" << endl;
+                                cout << "<3> To Book Cab From NewDelhi To Indirapuram" << endl;
                                 cout << endl;
-                                cout << "<4> To Book Cab From Peshawer To Mardan" << endl;
+                                cout << "<4> To Book Cab From NewDelhi To Ghaziabad" << endl;
                                 cout << endl;
                                 cout << "<5> To Go Back to Previous Menu" << endl;
                                 cout << endl;
@@ -388,22 +388,22 @@ int main()
                                     count++;
                                 case 1:
                                 {
-                                    BookingFromPeshawerToNowshera(); //Calling function
+                                    BookingFromNewDelhiToNoida(); //Calling function
                                     break;
                                 }
                                 case 2:
                                 {
-                                    BookingFromPeshawerToIslamabad(); //Calling function
+                                    BookingFromNewDelhiToGurugram(); //Calling function
                                     break;
                                 }
                                 case 3:
                                 {
-                                    BookingFromPeshawerToLahore(); //Calling function
+                                    BookingFromNewDelhiToIndirapuram(); //Calling function
                                     break;
                                 }
                                 case 4:
                                 {
-                                    BookingFromPeshawerToMardan(); //Calling function
+                                    BookingFromNewDelhiToGhaziabad(); //Calling function
                                     break;
                                 }
                                 case 5:
@@ -611,7 +611,7 @@ int main()
 
     return 0;
 }
-void BookingFromPeshawerToNowshera()
+void BookingFromNewDelhiToNoida()
 {
     if (CABSTATUS[1] == 0 && CABSTATUS[2] == 0 && CABSTATUS[3] == 0 && CABSTATUS[4] == 0 && CABSTATUS[5] == 0)
     {
@@ -651,8 +651,8 @@ void BookingFromPeshawerToNowshera()
         cout << "What is your NAme : ";
         getline(cin, Name, '.');
         Charges = Distance * ChargesPerKm - Distance * 0.10;
-        cout << "\nPick : Peshawer";
-        cout << "\nDrop:Nowshera";
+        cout << "\nPick : NewDelhi";
+        cout << "\nDrop:Noida";
         cout << "\nDistance: 40Km";
         cout << "\nCharges: Rs" << Charges << "\n";
         char PaidCharges;
@@ -664,8 +664,8 @@ void BookingFromPeshawerToNowshera()
             cout << "Your Booking Has Been Done\n";
             MyFile << "\n\t\tCustomer Record\n";
             MyFile << "\nNAme : " << Name;
-            MyFile << "\nPick : Peshawer";
-            MyFile << "\nDrop:Nowshera";
+            MyFile << "\nPick : NewDelhi";
+            MyFile << "\nDrop:Noida";
             MyFile << "\nDistance: 40Km";
             MyFile << "\nCharges: Rs" << Charges;
             MyFile.close();
@@ -679,8 +679,8 @@ void BookingFromPeshawerToNowshera()
             cout << "Your Booking Has Been Done\n";
             MyFile << "\n\t\tCustomer Record\n";   
             MyFile << "\nNAme : " << Name;         
-            MyFile << "\nPick : Peshawer";         
-            MyFile << "\nDrop:Nowshera";           
+            MyFile << "\nPick : NewDelhi";         
+            MyFile << "\nDrop:Noida";           
             MyFile << "\nDistance: 40Km";          
             MyFile << "\nCharges: Rs" << Charges;  
             MyFile.close();                       
@@ -692,8 +692,8 @@ void BookingFromPeshawerToNowshera()
             cout << "Your Booking HAs BEen Canceled Due to Unpaid Charge. \n";
             MYFile << "\n\t\tBooking Caceled\n";   
             MYFile << "\nNAme : " << Name;         
-            MYFile << "\nPick : Peshawer";         
-            MYFile << "\nDrop:Islamabad";          
+            MYFile << "\nPick : NewDelhi";         
+            MYFile << "\nDrop:Gurugram";          
             MYFile << "\nDistance: 150Km";         
             MYFile << "\nCharges: Rs" << Charges;  
             MYFile.close();                        
@@ -704,7 +704,7 @@ void BookingFromPeshawerToNowshera()
     }
 }
 
-void BookingFromPeshawerToIslamabad()
+void BookingFromNewDelhiToGurugram()
 {
     if (CABSTATUS[1] == 0 && CABSTATUS[2] == 0 && CABSTATUS[3] == 0 && CABSTATUS[4] == 0 && CABSTATUS[5] == 0)
     {
@@ -742,8 +742,8 @@ void BookingFromPeshawerToIslamabad()
         cout << "What is your NAme : ";
         getline(cin, Name, '.');
         Charges = Distance * ChargesPerKm - Distance * 0.10;
-        cout << "\nPick : Peshawer";
-        cout << "\nDrop:Nowshera";
+        cout << "\nPick : NewDelhi";
+        cout << "\nDrop:Noida";
         cout << "\nDistance: 150Km";
         cout << "\nCharges: Rs" << Charges << "\n";
         cout << endl;
@@ -757,8 +757,8 @@ void BookingFromPeshawerToIslamabad()
             cout << "Your Booking Has Been Done\n";
             MyFile << "\n\t\tCustomer Record\n";   
             MyFile << "\nNAme : " << Name;         
-            MyFile << "\nPick : Peshawer";         
-            MyFile << "\nDrop:Islamabad";          
+            MyFile << "\nPick : NewDelhi";         
+            MyFile << "\nDrop:Gurugram";          
             MyFile << "\nDistance: 150Km";         
             MyFile << "\nCharges: Rs" << Charges;  
             MyFile.close();                        
@@ -772,8 +772,8 @@ void BookingFromPeshawerToIslamabad()
             cout << "Your Booking Has Been Done\n";
             MyFile << "\n\t\tCustomer Record\n";   
             MyFile << "\nNAme : " << Name;         
-            MyFile << "\nPick : Peshawer";         
-            MyFile << "\nDrop:Islamabad";          
+            MyFile << "\nPick : NewDelhi";         
+            MyFile << "\nDrop:Gurugram";          
             MyFile << "\nDistance: 150Km";         
             MyFile << "\nCharges: Rs" << Charges;  
             MyFile.close();                        
@@ -785,8 +785,8 @@ void BookingFromPeshawerToIslamabad()
             cout << "Your Booking HAs BEen Canceled Due to Unpaid Charge. \n";
             MYFile << "\n\t\tBooking Caceled\n";   
             MYFile << "\nNAme : " << Name;         
-            MYFile << "\nPick : Peshawer";         
-            MYFile << "\nDrop:Islamabad";          
+            MYFile << "\nPick : NewDelhi";         
+            MYFile << "\nDrop:Gurugram";          
             MYFile << "\nDistance: 150Km";         
             MYFile << "\nCharges: Rs" << Charges;  
             count--;
@@ -796,7 +796,7 @@ void BookingFromPeshawerToIslamabad()
         Sleep(2000);
     }
 }
-void BookingFromPeshawerToLahore()
+void BookingFromNewDelhiToIndirapuram()
 {
 
     if (CABSTATUS[1] == 0 && CABSTATUS[2] == 0 && CABSTATUS[3] == 0 && CABSTATUS[4] == 0 && CABSTATUS[5] == 0)
@@ -835,8 +835,8 @@ void BookingFromPeshawerToLahore()
         cout << "What is your NAme : ";
         getline(cin, Name, '.');
         Charges = Distance * ChargesPerKm - Distance * 0.10; 
-        cout << "\nPick : Peshawer";
-        cout << "\nDrop:Lahore";
+        cout << "\nPick : NewDelhi";
+        cout << "\nDrop:Indirapuram";
         cout << "\nDistance: 450Km";
         cout << "\nCharges: Rs" << Charges << "\n";
         char PaidCharges;
@@ -848,8 +848,8 @@ void BookingFromPeshawerToLahore()
             cout << "Your Booking Has Been Done\n";
             MyFile << "\n\t\tCustomer Record\n";   
             MyFile << "\nNAme : " << Name;         
-            MyFile << "\nPick : Peshawer";         
-            MyFile << "\nDrop:Lahore";             
+            MyFile << "\nPick : NewDelhi";         
+            MyFile << "\nDrop:Indirapuram";             
             MyFile << "\nDistance: 350Km";         
             MyFile << "\nCharges: Rs" << Charges;  
             MyFile.close();                        
@@ -864,8 +864,8 @@ void BookingFromPeshawerToLahore()
             cout << "Your Booking Has Been Done\n";
             MyFile << "\n\t\tCustomer Record\n";   
             MyFile << "\nNAme : " << Name;         
-            MyFile << "\nPick : Peshawer";         
-            MyFile << "\nDrop:Lahore";             
+            MyFile << "\nPick : NewDelhi";         
+            MyFile << "\nDrop:Indirapuram";             
             MyFile << "\nDistance: 350Km";         
             MyFile << "\nCharges: Rs" << Charges;  
             MyFile.close();                        
@@ -877,8 +877,8 @@ void BookingFromPeshawerToLahore()
             cout << "Your Booking HAs BEen Canceled Due to Unpaid Charge. \n";
             MYFile << "\n\t\tBooking Caceled\n";   
             MYFile << "\nNAme : " << Name;         
-            MYFile << "\nPick : Peshawer";         
-            MYFile << "\nDrop:Lahore";             
+            MYFile << "\nPick : NewDelhi";         
+            MYFile << "\nDrop:Indirapuram";             
             MYFile << "\nDistance: 350Km";         
             MYFile << "\nCharges: Rs" << Charges;  
             count--;
@@ -889,7 +889,7 @@ void BookingFromPeshawerToLahore()
     }
 }
 
-void BookingFromPeshawerToMardan()
+void BookingFromNewDelhiToGhaziabad()
 {
     if (CABSTATUS[1] == 0 && CABSTATUS[2] == 0 && CABSTATUS[3] == 0 && CABSTATUS[4] == 0 && CABSTATUS[5] == 0)
     {
@@ -927,8 +927,8 @@ void BookingFromPeshawerToMardan()
         cout << "What is your NAme : ";
         getline(cin, Name, '.');
         Charges = Distance * ChargesPerKm - Distance * 0.10; 
-        cout << "\nPick : Peshawer";
-        cout << "\nDrop:Mardan";
+        cout << "\nPick : NewDelhi";
+        cout << "\nDrop:Ghaziabad";
         cout << "\nDistance: 35Km";
         cout << "\nCharges: Rs" << Charges << "\n";
         char PaidCharges;
@@ -942,8 +942,8 @@ void BookingFromPeshawerToMardan()
             cout << "Your Booking Has Been Done\n";
             MyFile << "\n\t\tCustomer Record\n";   
             MyFile << "\nNAme : " << Name;         
-            MyFile << "\nPick : Peshawer";         
-            MyFile << "\nDrop:Mardan";             
+            MyFile << "\nPick : NewDelhi";         
+            MyFile << "\nDrop:Ghaziabad";             
             MyFile << "\nDistance: 35Km";          
             MyFile << "\nCharges: Rs" << Charges;  
             MyFile.close();                        
@@ -957,8 +957,8 @@ void BookingFromPeshawerToMardan()
             cout << "Your Booking Has Been Done\n";
             MyFile << "\n\t\tCustomer Record\n";   
             MyFile << "\nNAme : " << Name;         
-            MyFile << "\nPick : Peshawer";         
-            MyFile << "\nDrop:Mardan";             
+            MyFile << "\nPick : NewDelhi";         
+            MyFile << "\nDrop:Ghaziabad";             
             MyFile << "\nDistance: 35Km";          
             MyFile << "\nCharges: Rs" << Charges;  
             MyFile.close();                        
@@ -970,8 +970,8 @@ void BookingFromPeshawerToMardan()
             cout << "Your Booking HAs BEen Canceled Due to Unpaid Charge. \n";
             MYFile << "\n\t\tBooking Caceled\n";   
             MYFile << "\nNAme : " << Name;         
-            MYFile << "\nPick : Peshawer";         
-            MYFile << "\nDrop:Islamabad";          
+            MYFile << "\nPick : NewDelhi";         
+            MYFile << "\nDrop:Gurugram";          
             MYFile << "\nDistance: 150Km";         
             MYFile << "\nCharges: Rs" << Charges;  
             MYFile.close();                        
